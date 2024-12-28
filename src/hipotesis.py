@@ -80,6 +80,10 @@ def analizar_hipotesis(hipotesis):
         ax.set_title("Relación entre uso de aplicaciones de productividad y juegos")
         st.pyplot(fig)
 
+        # Conclusión para Hipótesis 4
+        st.markdown("### Conclusión Hipótesis 4")
+        st.write("El análisis muestra que no existe una correlación clara entre el tiempo dedicado a aplicaciones de productividad y el tiempo dedicado a juegos. Esto sugiere que los usuarios pueden equilibrar el tiempo entre ambos tipos de aplicaciones sin una relación directa.")
+
     elif "Hipótesis 5" in hipotesis:
         # Hipótesis 5: Tiempo en pantalla por género
         st.subheader("Análisis de tiempo en pantalla por género")
@@ -88,3 +92,7 @@ def analizar_hipotesis(hipotesis):
         sns.boxplot(x="Gender", y="Daily_Screen_Time_Hours", data=data, ax=ax)
         ax.set_title("Tiempo diario en pantalla por género")
         st.pyplot(fig)
+
+        # Conclusión para Hipótesis 5
+        st.markdown("### Conclusión Hipótesis 5")
+        st.write("El tiempo diario en pantalla es similar entre géneros, ya que las medianas y los rangos intercuartiles son cercanos. Esto sugiere que el género, por sí solo, no es un predictor confiable del tiempo en pantalla.")
