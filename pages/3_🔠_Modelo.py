@@ -5,8 +5,19 @@ st.title("🤖 Entrenamiento y Predicción")
 
 st.write(
     """
-    Entrenamos un modelo de regresión logística para predecir el género
-    basado en las características del uso de aplicaciones.
+    ## ¿Qué es la Regresión Logística?
+    La regresión logística es un algoritmo de aprendizaje supervisado que se utiliza para 
+    resolver problemas de clasificación binaria. En este caso, se usa para predecir el género 
+    (Masculino o Femenino) en función de las características del uso de aplicaciones.
+
+    ### ¿Por qué se escogió este modelo?
+    Este modelo es sencillo de implementar, eficiente y ofrece una interpretación directa 
+    de las relaciones entre las variables predictoras y la variable objetivo.
+
+    ### Mejoras implementadas
+    - **Normalización de características**: Para mejorar la estabilidad numérica y el rendimiento.
+    - **Filtrado de valores atípicos**: Para evitar que puntos extremos distorsionen el modelo.
+    - **Regularización**: Se utilizó regularización L2 para evitar el sobreajuste.
     """
 )
 
