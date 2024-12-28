@@ -61,17 +61,15 @@ st.subheader("📋 Información del Dataset")
 st.markdown("""
 Este dataset proviene de un estudio sobre el uso de aplicaciones móviles y el comportamiento de los usuarios. Se utiliza para realizar predicciones sobre el género de los usuarios basándose en sus patrones de uso de aplicaciones.
 
-### Características principales:
-- **Filas**: 1000 muestras de datos.
-- **Columnas**: 20 características relacionadas con el uso de aplicaciones, como la frecuencia de uso de diferentes aplicaciones, las horas activas, la duración de la sesión, entre otros.
+### "Este proyecto está dirigido a empresas de tecnología y marketing digital interesadas en personalizar experiencias según el perfil de usuario. También es relevante para investigadores de comportamiento digital."
 
-### Columnas:
-1. **User_ID**: Identificador único del usuario.
-2. **App_Usage_Frequency**: Frecuencia de uso de aplicaciones en horas.
-3. **Total_Apps_Used**: Número total de aplicaciones utilizadas por el usuario.
-4. **Session_Duration**: Duración media de las sesiones en minutos.
-5. **Activity_Level**: Nivel de actividad en la aplicación (alta, media, baja).
-6. **Gender**: Género del usuario (masculino/femenino). Este es el objetivo de la predicción.
+predicción de género basada en el uso de aplicaciones móviles. Este análisis tiene como objetivo apoyar a empresas y equipos de investigación en la personalización y entendimiento de sus usuarios.
+
+### Contexto:
+"En el mundo actual, las aplicaciones móviles generan datos masivos sobre el comportamiento de los usuarios. Sin embargo, entender estos datos y usarlos para predecir perfiles, como el género, sigue siendo un desafío."
+### Objetivo:
+"Nuestro proyecto busca responder a una pregunta clave: ¿Es posible predecir el género de un usuario basado en su uso de aplicaciones? Esto se aborda utilizando técnicas de regresión logística aplicadas a un dataset representativo."
+
 
 ### Objetivo del Proyecto:
 El objetivo principal de este proyecto es predecir el género de los usuarios utilizando técnicas de **regresión logística** basadas en sus patrones de uso de aplicaciones móviles. 
