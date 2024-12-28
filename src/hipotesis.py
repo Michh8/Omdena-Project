@@ -31,6 +31,10 @@ def analizar_hipotesis(hipotesis):
             ax.set_title("Conteo de géneros")
             st.pyplot(fig)
 
+        # Conclusión para Hipótesis 1
+        st.markdown("### Conclusión Hipótesis 1")
+        st.write("Basado en el gráfico de distribución del tiempo de uso por género, no parece haber una diferencia significativa entre hombres y mujeres en el promedio de horas totales de uso de aplicaciones. Esto sugiere que el género no es un factor determinante en el tiempo de uso total de aplicaciones.")
+
     elif "Hipótesis 2" in hipotesis:
         # Hipótesis 2: Apps por ubicación
         st.subheader("Análisis de número de aplicaciones por ubicación")
@@ -41,6 +45,10 @@ def analizar_hipotesis(hipotesis):
             ax.set_title("Distribución de Apps por Ubicación")
             ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha="right")
             st.pyplot(fig)
+
+            # Conclusión para Hipótesis 2
+            st.markdown("### Conclusión Hipótesis 2")
+            st.write("En la gráfica de distribución del número de aplicaciones utilizadas por ubicación, las medianas y los rangos intercuartiles son bastante consistentes entre las ciudades evaluadas. Esto sugiere que la ubicación no influye significativamente en el número promedio de aplicaciones utilizadas.")
         else:
             st.error("La columna 'Location' no está disponible en el dataset. Por favor, verifica los datos.")
 
@@ -55,6 +63,10 @@ def analizar_hipotesis(hipotesis):
         sns.boxplot(x="Age_Group", y="Social_Media_Usage_Hours", data=data, ax=ax)
         ax.set_title("Horas en redes sociales por grupos de edad")
         st.pyplot(fig)
+
+        # Conclusión para Hipótesis 3
+        st.markdown("### Conclusión Hipótesis 3")
+        st.write("El análisis muestra que los usuarios entre 18 y 30 años tienen una mediana ligeramente superior en comparación con otros grupos de edad. Esto apoya la hipótesis de que las personas más jóvenes tienden a pasar más tiempo en redes sociales.")
 
     elif "Hipótesis 4" in hipotesis:
         # Hipótesis 4: Productividad vs Juegos
