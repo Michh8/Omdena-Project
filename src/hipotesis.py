@@ -35,10 +35,14 @@ def analizar_hipotesis(hipotesis):
         # Hipótesis 2: Apps por ubicación
         st.subheader("Análisis de número de aplicaciones por ubicación")
 
-        fig, ax = plt.subplots(figsize=(10, 6))
-        sns.boxplot(x='Gender', y='Number_of_Apps_Used', data=data, ax=ax)
-        ax.set_title("Distribución de Apps por Género")
-        st.pyplot(fig)
+        if 'Location' in data.columns:  # Asegúrate de que 'Location' sea la columna de ubicación
+            fig, ax = plt.subplots(figsize=(10, 6))
+            sns.boxplot(x='Location', y='Number_of_Apps_Used', data=data, ax=ax)
+            ax.set_title("Distribución de Apps por Ubicación")
+            ax.set_xticklabels(ax.get_xticklabels(), rotation=45, ha="right")
+            st.pyplot(fig)
+        else:
+            st.error("La columna 'Location' no está disponible en el dataset. Por favor, verifica los datos.")
 
     elif "Hipótesis 3" in hipotesis:
         # Hipótesis 3: Redes sociales por edad
